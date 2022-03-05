@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Llena tus Datos</title>
+        <link rel="stylesheet" href="./estilos.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container logo-nav-container">
+                <a href="./index.html" class="logo"><img src="./assets/img/Logo.png" alt="Logo" width="90"></a>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="./pedidos.html">Pedidos</a></li>
+                        <li><a href="./pass.html">Administración</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main2">
+            <div class="container">
+                <h1>Llena tus Datos:</h1>
+                <form>
+                    <table>
+                        <tr>
+                            <td><label>Nombre:</label></td>
+                            <td><input type="text" name="Nombre" id="Nombre"><br></td>
+                        </tr>
+                        <tr>
+                            <td><label>Teléfono:</label></td>
+                            <td><input type="tel" name="tel" id="tel"><br></td>
+                        </tr>
+                        <tr>
+                            <td><label>Correo:</label></td>
+                            <td><input type="email" name="mail" id="mail"><br></td>
+                        </tr>
+                        <tr>
+                            <td><label>Entrega:</label></td>
+                            <td><input type="datetime-local" name="entrega" id="entrega"><br></td>
+                        </tr>
+                    </table>
+                </form>
+                <table class="tabla">
+                    <tr>
+                        <td><label class="tag">Sabor(es):</label></td>
+                        <td>
+                            <ul>
+                                <li>Chocolate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="tag">Adornos:</label></td>
+                        <td>
+                            <ul>
+                                <li>Velitas</li>
+                                <li>Fondant</li>
+                                <li>Dibujo</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="tag">Precio:</label></td>
+                        <td>
+                            <ul>
+                                <li>$750.00 MXN</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <button onclick="location.href='finalizado.html'" class="buttonClass3">Confirmar</button><br><br><br>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <p>Av. Morelos 15 Col. Coaxusco, Tepetlixpa, Estado de México. Teléfono. 55 2011 9463. Atención. Lunes a Viernes 9.00 am a 16.00 pm, Sábados 9.00 am a 13.00 pm</p>
+                <h4>Diseñado por <a target="_blank" href="https://linktr.ee/alemango">@Alemango</a></h4>
+            </div>
+        </footer>
+    </body>
+</html>

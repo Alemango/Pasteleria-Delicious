@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+body {
+    font-family: 'Righteous', cursive;
+    background-image: url('./assets/img/Group\ 6.png');
+    background-repeat: round;
+    color: #333;
+    margin: 0;
+  }
+
+.container{
+    width: 90%;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.container p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+
+.header{
+    color: #333;
+    padding: 10px 0;
+}
+
+.header a{
+    color: #333;
+    text-decoration: none;
+}
+
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation ul li {
+    display: inline-block;
+}
+
+.navigation ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s linear;
+}
+
+.navigation ul li a:hover{
+    text-decoration: underline;
+    color: rgb(150, 41, 150);
+    font-weight: bolder;
+}
+
+.logo{
+    letter-spacing: 1px;
+}
+
+.header a.logo{
+    color: antiquewhite;
+}
+
+.footer{
+    text-align: center;
+    margin-top: 15rem;
+    font-size: 0.7em;
+}
+
+.footerp{
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 0.7em;
+}
+
+.footerf{
+    text-align: center;
+    margin-top: 11rem;
+    font-size: 0.7em;
+}
+
+.footera{
+    text-align: center;
+    margin-top: 7rem;
+    font-size: 0.7em;
+}
+
+.footerc{
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 0.7em;
+}
+
+.foto{
+    float: right; 
+    width: 700px;
+}
+
+.main{
+    margin: 150px;
+}
+
+.mainp{
+    text-align: center;
+}
+
+.buttonClass {
+    font-size:15px;
+    font-family:'Righteous', cursive;
+    width:140px;
+    height:50px;
+    border-width:1px;
+    color:#bc80ea;
+    border-color:#c584f3;
+    font-weight:bold;
+    border-top-left-radius:6px;
+    border-top-right-radius:6px;
+    border-bottom-left-radius:6px;
+    border-bottom-right-radius:6px;
+    box-shadow:inset 0px 1px 0px 0px #efdcfb;
+    text-shadow:inset 0px 1px 0px #9752cc;
+    background:#dfbdfa;
+}
+  
+.buttonClass:hover {
+    background: #bc80ea;
+    color: rgb(214, 205, 205);
+}
+
+.buttonClass2 {
+    font-size:15px;
+    font-family:'Righteous', cursive;
+    width:140px;
+    height:50px;
+    border-width:1px;
+    color:#bc80ea;
+    border-color:#c584f3;
+    font-weight:bold;
+    border-top-left-radius:6px;
+    border-top-right-radius:6px;
+    border-bottom-left-radius:6px;
+    border-bottom-right-radius:6px;
+    box-shadow:inset 0px 1px 0px 0px #efdcfb;
+    text-shadow:inset 0px 1px 0px #9752cc;
+    background:#dfbdfa;
+    float:right;
+    margin-right: 600px;
+}
+  
+.buttonClass2:hover {
+    background: #bc80ea;
+    color: rgb(214, 205, 205);
+}
+
+.buttonClass3 {
+    font-size:15px;
+    font-family:'Righteous', cursive;
+    width:140px;
+    height:50px;
+    border-width:1px;
+    color:#bc80ea;
+    border-color:#c584f3;
+    font-weight:bold;
+    border-top-left-radius:6px;
+    border-top-right-radius:6px;
+    border-bottom-left-radius:6px;
+    border-bottom-right-radius:6px;
+    box-shadow:inset 0px 1px 0px 0px #efdcfb;
+    text-shadow:inset 0px 1px 0px #9752cc;
+    background:#dfbdfa;
+    float:right;
+    margin-right: 700px;
+}
+  
+.buttonClass3:hover {
+    background: #bc80ea;
+    color: rgb(214, 205, 205);
+}
+.cards {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    margin-left: 15px;
+    text-align: center;
+}
+
+.cards__item {
+    flex-basis: 15%;
+
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.image:hover{
+    transition: all 0.5s;
+    filter: blur(2px);
+}
+
+*{
+    box-sizing: border-box;
+}
+    
+.contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor figure{
+    position:relative;
+    cursor: pointer;
+    width: 180px;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.contenedor figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+    will-change: transform;
+}
+
+.contenedor figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.contenedor figure:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedor figure:hover > .capa h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.contenedor figure:hover > img{
+    transform: scale(1.1);
+}
+
+.contenedor figure .capa h3{
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 400ms ease-out;
+    margin-top: 30px;
+    -webkit-text-stroke: 1px black;
+}
+
+.contenedor figure .capa p{
+    color: rgb(15, 252, 66);
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+.tabla{
+    float: right;
+    margin-top: -135px;
+}
+
+.tabla li{
+    color: rgb(97, 89, 89);
+}
+
+.tabla2{
+    float: right;
+    margin-top: -340px;
+    text-align: left;
+}
+
+.tabla2 li{
+    color: rgb(97, 89, 89);
+}
+
+.tag{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+.tag2{
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+
+.table{
+    text-align: left;
+}
+
+.boton{
+    font-family: 'Righteous', cursive;;
+    background-color: #dfbdfa;
+    margin-left: 30px;
+    color: #c584f3;
+    border-color: #8a24d8 1px;
+    border-width: 1px;
+}
+
+.boton:hover{
+    background: #bc80ea;
+    color: rgb(214, 205, 205);
+}
+
+.tablaSec{
+    color: rgb(97, 89, 89);
+}
+
+.boton2{
+    font-family: 'Righteous', cursive;;
+    background-color: #dfbdfa;
+    margin-left: 30px;
+    color: #c584f3;
+    border-color: #8a24d8 1px;
+    border-width: 1px;
+    float: right;
+}
+
+.boton2:hover{
+    background: #bc80ea;
+    color: rgb(214, 205, 205);
+}
+
+.contacto1{
+    text-align: left;
+}
+
+.frame{
+    float: right;
+    margin-top: -320px;
+    margin-right: 100px;
+}
